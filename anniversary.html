@@ -1,37 +1,168 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8" >
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-        <title>Happy Valentines Day</title>
-    </head>
-    <style>
-        .center {
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Anniversary Memories</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0f0f0;
+        color: #333;
+    }
+    header {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+    }
+    main {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .memory {
+        margin-bottom: 20px;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border-left: 5px solid #333;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .dropdown-content {
+        display: none;
+        padding: 10px;
+        background-color: #f9f9f9;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+    .memory.active .dropdown-content {
         display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        }
-    </style>
-    <body>
-        <!-- This is a comment -->
-        <h1 class="text-center">I Love You Katelyn</h1>
-        <h2>&nbsp;To my Lady,</h2>
-        <p>
-            &emsp;&emsp;Happy Valentines Day, Katelyn. It has been such a pleasure being
-            your boyfriend for the 11 months that we have been together. I hope you are content
-            with my creative solution to a valentines day card. I've been very happy being with you, I feel
-            like I can be myself and its so easy to communicate with you because you are so caring and thoughtful.
-            I know I can be difficult, to say the least, but I appreciate how we always find a way to find humor 
-            in the situation. You deserve so much, much more than I can ever give you. Whether we are eating Taco Bell,
-            watching Wrestling or Mia Maples, doing Wordle, Connections, or the Mini together, I just love 
-            spending time with you honey. Being with you has given me a much better understanding to what it 
-            means to be in a relationship. I want to be with you and I want to make you happy.
-        </p>
-        <p class=text-center>You are my best friend, my love, my girl, my Katelyn. I love you. </p>
-        <img class=center src="img/us.png" width="500" 
-        height="450" >
-    </body>
+    }
+    img {
+        width: 200px; /* Set the width of the image */
+        height: auto; /* Maintain aspect ratio */
+        margin-top: 10px; /* Add space above each image */
+    }
+</style>
+</head>
+<body>
+<header>
+    <h1>Our First Year</h1>
+</header>
+<main>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>Feb 18th, 2023 - 24 Hour Challenge</h2>
+        <div class="dropdown-content">
+            <p> All of this, just because I decided to lay on the floor in Izzy's room. I stayed over and so we started the 
+                24 hour challenge. We slept on the floor and 
+                avoided the feet from above us. Neither of us slept, we just talked and goofed all night
+                long and when it was finally morning we got mcgriddles. Because we were so tired, we
+                then slept all day together. At 4pm, we got out of bed and got Chic-Fil-A, our first "Date". I took the best pic of you.
+                Afterward, we went back to my dorm and watched some impractical jokers and napped some more.
+                I'm so lucky I happened to lay on the floor with you.
+            </p>
+            <img src="Photos\24hr_chal.PNG" alt="First Date Photo">
+            <img src="Photos\1st_selfie.jpeg" alt="First Date Photo">
+            <img src="Photos\1st_date.jpg" alt="First Date Photo">
+        </div>
+    </div>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>Mar 18th, 2023 - Tying Shoes</h2>
+        <div class="dropdown-content">
+            <p> This was the day we were looking for green things for the St. Paddys Day parade.
+                We went to Itzaparty and then later, Panera. I had fun hangin out with you because 
+                you were just so funny and photogenic. That night, we decided to try and find some fun on campus.
+                While we were in the dorm, we were only really talking to eachother. You promised me 
+                a kiss if I tied your shoes. That was such a great and important night. In the morning, 
+                we weren't able to discuss our relationship going forward because you had the parade. But 
+                we both knew what we wanted.
+            </p>
+            <img src="Photos\thing1.jpg" alt="First Kiss Photo">
+            <img src="Photos\shoes_tied.JPG" alt="First Kiss Photo">
+            <img src="Photos\stuffy_nose.jpg" alt="First Kiss Photo">
+        </div>
+    </div>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>Mar 31st, 2023 - A Kinder Egg Proposal</h2>
+        <div class="dropdown-content">
+            <p> This was the day we officially started dating. I had already called you my girlfriend
+                to Andrew and others but I wanted to do an official proposal. I had bought a Grogu easter basket
+                and filled it with your favorite candies and pictures of us. We drove to Texas Roadhouse but since
+                it was so busy, I had decided to just ask you out in the parking lot. I was so happy and lucky you had 
+                said yes. We went to Olive Garden instead and they treated us as if they knew we had just
+                started dating. Days later, I took this nice picture of you at the Plymouth Rock. I remember thinking 
+                that I was taking a picture of my girlfriend. Not just Katelyn.
+            </p>
+            <img src="Photos\kinder.jpg" alt="First Date Photo">
+            <img src="Photos\plim_rock.jpg" alt="First Date Photo">
+        </div>
+    </div>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>April 17th, 2023 - Slime Time at Stonehill</h2>
+        <div class="dropdown-content">
+            <p> Remember that time we went to Stonehill and played with slime? I remember being nervous 
+                to meet your friends kind of "officially". I didn't want to embarrass you, being your 'new' 
+                'BSU' boyfriend. Even though it was just slime making and it was really gross and sticky, we 
+                made our own fun just as we always do. Doesn't matter what we do, as long as I'm with you.
+            </p>
+            <img src="Photos\slime.jpg" alt="First Date Photo">
+            <img src="Photos\slime2.jpg" alt="First Date Photo">
+        </div>
+    </div>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>May 30th, 2023 - Dogs Out</h2>
+        <div class="dropdown-content">
+            <p> If you remember, this was my screensaver for a while. You with your hot dog at Five Guys. I thought it was
+                so cute when you would get a hot dog everytime we went out or when you would want me to cook you one. 
+                I just love how authentic you are, it really shows in your pictures. Always smiling and pretty. I'm proud 
+                to show you off when we eat at restaurants. Thats my girlfriend with the Hot Dog. Yup, one cheesy roll up please, 
+                don't forget the baja.
+            </p>
+            <img src="Photos\five_guys.jpg" alt="First Date Photo">
+        </div>
+    </div>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>Jun 10th, 2023 - Axis Powers</h2>
+        <div class="dropdown-content">
+            <p> This was around the time I had met your family. They wasted no time getting me adjusted to the dynamics of the family.
+                They were quick and clever with their jokes and they were slyly interrogating me to make sure I was a good fit for you. 
+                It's sweet that they cared so much about protecting you and making sure you're happy with me. I'm glad I passed the tests 
+                and as a reward, your mom made me my own buffalo chicken calzone. It was literally the bomb. Thank you Rosie, I still 
+                think about it.
+            </p>
+            <img src="Photos\marshfield.jpg" alt="First Kiss Photo">
+            <img src="Photos\calzone.jpg" alt="First Kiss Photo">
+        </div>
+    </div>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>Blah, 2023 - Maybe AeroBoost / Museum</h2>
+        <div class="dropdown-content">
+            <p> 
+            </p>
+            <img src="" alt="Summer stuff">
+        </div>
+    </div>
+    <div class="memory" onclick="toggleMemory(this)">
+        <h2>Blah, 2023 - Disney</h2>
+        <div class="dropdown-content">
+            <p> 
+            </p>
+            <img src="" alt="Disney stuff">
+        </div>
+    </div>
+</main>
+
+<script>
+    function toggleMemory(memory) {
+        memory.classList.toggle('active');
+    }
+</script>
+</body>
 </html>
